@@ -1,10 +1,10 @@
 ### Programs relating to variables,if,else,while in C.
 
 ###### 0-positive_or_negative.c 
-This program will assing a random number to the variable n each time it is executed.
+This program will assign a random number to the variable n each time it is executed.
 
 ###### 1-last-digit.c
-This program will assing a random number to the variable n each time is is executed. The source code is completed to print the last digit of the number stored in the variable n.
+This program will assign a random number to the variable n each time is is executed. The source code is completed to print the last digit of the number stored in the variable n.
 
 ###### 2-print_alphabet.c
 This program prints the alphabet in lowercase, followed by a new line.
