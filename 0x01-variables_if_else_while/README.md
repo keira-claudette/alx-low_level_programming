@@ -1,4 +1,4 @@
-#### Programs relating to variables,if,else,while in C.
+### Programs relating to variables,if,else,while in C.
 
 ###### 0-positive_or_negative.c 
 This program will assing a random number to the variable n each time it is executed.
