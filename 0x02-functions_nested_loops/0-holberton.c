@@ -1,7 +1,8 @@
 #include "holberton.h"
+
 /**
-*main prints Holberton followed by  new line.
-*return (0)success
+* main - prints out Holberton followed by a new line
+* Return: the function returns 0
 */
 int main(void)
 {
@@ -14,6 +15,6 @@ _putchar('r');
 _putchar('t');
 _putchar('o');
 _putchar('n');
-_putchar('/n')
-return  (0);
+_putchar('\n');
+return (0);
 }
