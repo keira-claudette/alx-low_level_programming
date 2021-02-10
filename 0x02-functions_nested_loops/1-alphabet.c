@@ -5,7 +5,7 @@
 * return type is void
 */
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
 char alpha = a;
 while (alpha <= z)
