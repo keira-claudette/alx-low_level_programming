@@ -2,7 +2,7 @@
 
 ###### 0-reset_to_98.c
 A function that takes a pointer to an int as parameter and updates the value it
- points to 98.
+ points to to 98.
 
 ###### 1-swap.c
 A function that swaps the values of two integers.
@@ -28,7 +28,8 @@ first character, followed by a new line.
 A function that prints half of a string, followed by a new line.
 The function should print the second half of the string
 If the number of characters is odd, the function should print the last n
-characters of the string, where n = (length_of_the_string - 1) / 2.
+characters of the string,
+where n = (length_of_the_string - 1) / 2.
 
 ###### 8-print_array.c
 A  a function that prints n elements of an array of integers, followed by a
