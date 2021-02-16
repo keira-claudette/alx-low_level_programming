@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * int_strlen - returns length of string
+ * _strlen - returns length of string
  * @s: string to be checked
  * @i: index of elements of the array
  * Return: void
