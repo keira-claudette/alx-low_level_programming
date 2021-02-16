@@ -18,14 +18,15 @@ void print_rev(char *s)
 
 	last_char = i;
 
+
 	j = (last_char - 1);
 
 	while (j >= 0)
 	{
 		_putchar(s[j]);
-	}
 
 	j--;
+	}
 
 	_putchar('\n');
 }
