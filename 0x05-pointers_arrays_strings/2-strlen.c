@@ -2,7 +2,6 @@
 /**
  * _strlen - returns length of string
  * @s: string to be checked
- * @i: index of elements of the array
  * Return: void
  */
 int _strlen(char *s)
