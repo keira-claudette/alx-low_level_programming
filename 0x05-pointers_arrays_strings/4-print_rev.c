@@ -2,9 +2,6 @@
 /**
  *print_rev - prints string in reverse
  * @s: pointer to string
- *@i: index for elements in string,in loop for counting length of string.
- *@j: variable for second loop for printing in reverse with regard to index.
- *@last_char: assigns index for null byte to j.
  */
 void print_rev(char *s)
 {
@@ -21,7 +18,7 @@ void print_rev(char *s)
 
 	last_char = i;
 
-	j = last_char - 1;
+	j = (last_char - 1);
 
 	while (j >= 0)
 	{
