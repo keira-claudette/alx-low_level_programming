@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 /**
  * _strncpy - function that copies
  * @dest: string to copy into
@@ -7,19 +8,15 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i, j;
+	int i;
 
-	i = 0;
-
-	j = 0;
-
-	while (src[j] != src[n])
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		dest[i] = src[i];
+	while (i < n)
 	{
-		dest[i] = src[j];
-
+		dest[i] = '\0';
 		i++;
-		j++;
-
 	}
+
 	return (dest);
 }
