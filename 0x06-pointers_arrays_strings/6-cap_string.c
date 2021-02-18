@@ -10,16 +10,19 @@ char *cap_string(char *s)
 {
 	int i = 0;
 
-	/* first checking  index for lowercaps */
+	for (i = 0; s[i] != '\0'; i++)
+	{
 
 	if (s[i] >= 'a' && s[i] <= 'z')
 
-	i++;
+		s[i] -= 32;
+
+
+	}
 
 	while (s[i] != '\0')
 	{
 
-		/* if lowercase and prior char is separator, capitalize*/
 		if ((s[i] >= 'a' && s[i] <= 'z')
 		    && (s[i - 1] == ',' || s[i - 1] == ';' || s[i - 1] == '.' ||
 			s[i - 1] == '!' || s[i - 1] == '?' || s[i - 1] == '"' ||
