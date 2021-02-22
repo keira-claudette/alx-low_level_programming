@@ -1,4 +1,4 @@
-0;136;0c### Even more pointers, arrays and strings
+### Even more pointers, arrays and strings
 
 ###### 0-memset.c
 A function that fills memory with a constant byte.
