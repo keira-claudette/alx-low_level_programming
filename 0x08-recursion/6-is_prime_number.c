@@ -3,6 +3,7 @@
  * find_prime - finds prime number
  * @a: number to be checked
  * @b: number to iterate and check
+ * Return: int
  */
 int find_prime(int a, int b)
 {
