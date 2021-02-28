@@ -10,35 +10,33 @@
 
 int main(int argc, char **argv)
 {
-	int i, sum, j;
-	i = 0;
+int i, sum;
+i = 0;
 
-	if (argc <= 1)
-	{
-		printf("0\n");
-	}
-	else
-	
-	{
-		if ((*argv[i] >= 'a' && *argv[i] <= 'z') || (*argv[i] >= 'A' && *argv[i] <= 'Z'))
-				
-		printf("Error\n");
-		return (1);
-	}
-	else
+if (argc <= 1)
+{
+printf("0\n");
+}
+else
+if ((*argv[i] >= 'a' && *argv[i] <= 'z') || *argv[i] >= 'A' && *argv[i] <= 'Z')
+{
+printf("Error\n");
+return (1);
+}
+else
 
-		if (**argv > 0)
-	{
-		for (i = 1; i < argc; i++)
-		{
-			sum += atoi(argv[i]);
+if (**argv > 0)
+{
+for (i = 1; i < argc; i++)
+{
+sum += atoi(argv[i]);
 
-			if (i == argc - 1)
-			{
-			printf("%d\n", sum);
-			}
-		}
+if (i == argc - 1)
+{
+printf("%d\n", sum);
+}
+}
 
-	}
-	return (0);
+}
+return (0);
 }
