@@ -18,7 +18,8 @@ if (argc <= 1)
 printf("0\n");
 }
 else
-if ((*argv[i] >= 'a' && *argv[i] <= 'z') || *argv[i] >= 'A' && *argv[i] <= 'Z')
+if ((*argv[i] >= 'a' && *argv[i] <= 'z') ||
+(*argv[i] >= 'A' && *argv[i] <= 'Z'))
 {
 printf("Error\n");
 return (1);
