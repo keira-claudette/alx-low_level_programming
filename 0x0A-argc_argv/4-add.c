@@ -18,9 +18,9 @@ int main(int argc, char **argv)
 		printf("0\n");
 	}
 	else
-		for (j = 1; j <argc; j++)
+	
 	{
-			if (!isdigit(*argv[j]))
+		if ((*argv[i] >= 'a' && *argv[i] <= 'z') || (*argv[i] >= 'A' && *argv[i] <= 'Z'))
 				
 		printf("Error\n");
 		return (1);
