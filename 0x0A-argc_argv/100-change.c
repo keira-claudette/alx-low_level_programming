@@ -36,9 +36,9 @@ int main(int argc, char *argv[])
 				amount -= 1;
 			}
 			printf("%d\n", change);
-
-		return (0);
 		}
+		return (0);
+
 	}
 	else
 	{
