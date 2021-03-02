@@ -1,0 +1,42 @@
+#include "holberton.h"
+#include <stdlib.h>
+/**
+ * alloc_grid - function that returns a pointer to a matrix
+ * @width: number of columns
+ * @height: number of rows
+ * Return: pointer to a pointer
+ */
+int **alloc_grid(int width, int height)
+{
+	int **array1;
+
+	int *array2;
+
+	int i, j;
+
+	if (width <= 0 || height <= 0)
+		return (NULL);
+
+	array1 = (int **) malloc(sizeof(int *) * height);
+
+			if (array1 == NULL)
+				return (NULL);
+/*creating strings with width elements*/
+			array2[i] = (int *) malloc(sizeof(int) * width);
+
+			if (array2[i] == NULL)
+				return (NULL);
+
+
+			for (i = 0; i <= height; i++)
+			{
+				for (j = 0; j < width; j++)
+				{
+					array2[i][j] = 0;
+				}
+
+			}
+
+			return (array1);
+
+}
