@@ -7,6 +7,7 @@
  * @height: number of strings in the matrix
  * Return: void
  */
+void free_grid(int **grid, int height)
 {
 	int i;
 
