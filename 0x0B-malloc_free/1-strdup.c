@@ -18,6 +18,9 @@ char *_strdup(char *str)
 /*allocate memory for copy of string*/
 	ptr = (char *)malloc(length * sizeof(char));
 
+	if (ptr == NULL)
+		return (NULL);
+
 	if (*str == '\0')
 	{
 		return (NULL);
