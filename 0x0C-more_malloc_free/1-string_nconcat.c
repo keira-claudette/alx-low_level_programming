@@ -31,7 +31,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 				len++;
 
 /* allocate memory for s3 */
-	s3 = malloc((sizeof(char) * len) + 1);
+		s3 = malloc((sizeof(char) * (len + 1)));
 
 	if (s3 == NULL)
 		return (NULL);
