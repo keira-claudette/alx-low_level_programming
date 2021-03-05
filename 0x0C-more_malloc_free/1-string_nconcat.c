@@ -40,7 +40,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s3[i] = s1[i];
 	for (; i < len; i++)
 		s3[i] = s2[i - len1];
-			s3[i] = '\0';
+			s3[len] = '\0';
 
 	return (s3);
 
