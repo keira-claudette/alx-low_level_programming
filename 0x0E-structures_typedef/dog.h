@@ -8,15 +8,13 @@
  * @owner: Third member
  * Description: Collect biodata
  */
+
 struct dog
 {
 	char *name;
 	float age;
 	char *owner;
 };
-/**
- * dog_t - new name for struct dog
- */
 
 typedef struct dog dog_t;
 
