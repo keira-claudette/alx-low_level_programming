@@ -6,6 +6,7 @@
  * @name: first member
  * @age: second member
  * @owner: Third member
+ * Description: Collect biodata
  */
 struct dog
 {
