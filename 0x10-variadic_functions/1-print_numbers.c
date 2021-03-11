@@ -22,6 +22,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			}
 			if (n && separator)
 			{
+				if (i == 0)
+					printf("%d", va_arg(num_print, unsigned int));
+				else
 			printf("%d", va_arg(num_print, unsigned int));
 			printf("%s", separator);
 			}
