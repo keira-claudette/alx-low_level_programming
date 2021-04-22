@@ -1,4 +1,6 @@
 #include "holberton.h"
+#include <stdio.h>
+
 /**
  * _strchr - function that locates a character in a string
  * @s: pointer to a string to be checked
@@ -26,7 +28,7 @@ char *_strchr(char *s, char c)
 		while (s[i] != '\0')
 			i++;
 
-		return ((s + i + 1));
+		return (NULL);
 	}
 
 	return (0);
