@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
-*main prints 0-9 using putchar
-*Return: 0;
+* main - prints 0-9 using putchar
+* Return: 0;
 */
 
 int main(void)
