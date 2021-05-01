@@ -1,4 +1,4 @@
-#include "lists.h"
+B#include "lists.h"
 /**
  * insert_dnodeint_at_index - inserts a new node at a given position
  * @h: pointer to the linked list
@@ -18,7 +18,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	new_mid_node->n = n;
 
-	if (!h)
+	if (!*h)
 	{
 		*h = new_mid_node;
 		new_mid_node->prev = NULL;
@@ -28,7 +28,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	while (*h && i < idx)
 	{
 		temp = temp->next;
-		if ( temp->next == NULL)
+		if (temp->next == NULL)
 			return (NULL);
 		i++;
 	}
