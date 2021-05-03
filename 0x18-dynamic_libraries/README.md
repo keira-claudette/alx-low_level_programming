@@ -24,7 +24,7 @@ A dynamic library containing all the functions listed below:<br>
  - `char *_strstr(char *haystack, char *needle);`
 
 ##### holberton.h
-containins all the prototypes of the above functions.
+contains all the prototypes of the above functions.
 
 ##### 1-create_dynamic_lib.sh
 a script that creates a dynamic library called liball.so from all the .c
