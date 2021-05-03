@@ -2,7 +2,7 @@
 
 - ##### libholberton.so
 A dynamic library containing all the functions listed below:<br>
- - int _putchar(char c);
+  - int _putchar(char c);
  - int _islower(int c);
  - int _isalpha(int c);
  - int _abs(int n);
