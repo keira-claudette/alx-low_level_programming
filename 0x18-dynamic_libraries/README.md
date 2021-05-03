@@ -1,4 +1,4 @@
-### C - Dynamic libraries
+## C - Dynamic libraries
 
 - ##### libholberton.so
 A dynamic library containing all the functions listed below:<br>
