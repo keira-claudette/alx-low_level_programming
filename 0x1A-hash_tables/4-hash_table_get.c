@@ -11,7 +11,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	hash_node_t *temp;
 	char *value;
 
-	if (!ht)
+	if (!ht || !key || !strcmp(key, ""))
 		return (NULL);
 	if (!ht->array[index])
 		return (NULL);
