@@ -17,11 +17,12 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (!new_table)
 		return (NULL);
 
-	new_array = malloc(size);
-	if (!new_array)
-		return (NULL);
 /* Assign values to new table */
 	new_table->size = size;
+        new_array = calloc((size_t)new_table->size, sizeof(hash_node_t *));
+        if (!new_array)
+                return (NULL);
+
 	new_table->array = new_array;
 	return (new_table);
 }
