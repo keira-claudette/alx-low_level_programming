@@ -8,23 +8,34 @@ def island_perimeter(grid):
                     Return: perimeter of the island described in grid
     """
 
-    n_cells = 0
-    list_1 = []
+    perimeter = 0
+    env_list = []
 
     for items in range(len(grid)):
         if items == 0 or items == len(grid):
             continue
         for cell in range(len(grid[items])):
-            if grid[items][cell] == 1:
-                if grid[items][cell + 1] == 0:
-                    if grid[items][cell - 1] == 1:
-                        n_cells = n_cells + 1
-                    else:
-                        continue
-                else:
-                    list_1.append(cell)
-                    n_cells = n_cells + 1
-            else:
+            if cell == 0 or cell == len(grid[items]):
                 continue
-    perimeter = 4 * n_cells
+            else:
+                if grid[items][cell] == 1:
+                    env_list = [grid[items - 1][cell], grid[items][cell + 1],
+                                grid[items + 1][cell],  grid[items][cell - 1]]
+                    count = 0
+                    for j in env_list:
+                        if j == 0:
+                            count = count + 1
+                    if (count == 4):
+                        return 4
+                    elif (count == 3):
+                        perimeter = perimeter + 3
+                    elif (count == 2):
+                        perimeter = perimeter + 2
+                    elif (count == 1):
+                        perimeter = perimeter + 1
+                    else:
+                        pass
+                    env_list = []
+                else:
+                    pass
     return perimeter
