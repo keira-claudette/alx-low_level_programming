@@ -1,6 +1,6 @@
 #ifndef SEARCH_ALGOAS
 #define SEARH_ALGOS
-
+void print_search(int *array, unsigned int l, size_t size);
 int linear_search(int *array, size_t size, int value);
 int binary_search(int *array, size_t size, int value);
 int jump_search(int *array, size_t size, int value);
