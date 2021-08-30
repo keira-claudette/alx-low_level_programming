@@ -1,7 +1,7 @@
 # C - Search Algorithms
 
-###### Space complexity
-###### Time complexity
+- ###### Space complexity
+- ###### Time complexity
 
 
 ## TASKS
