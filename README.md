@@ -8,6 +8,14 @@
 
 <img src="https://interrupt.memfault.com/img/gnu-make-guidelines/gnu-make.png" width ="160" height="auto"/>
 
+## Compilation:
+###### Use the following gcc flags
+```
+gcc -Wall -Wextra -Werror -pedantic example-main.c example.c -o example
+```
+Where `example-main.c` is the test file, `example.c` is your function declaration file and `example` if the name of the executable
+
+
 ## Tools:
 
 - ##### [`Betty Linter`](https://github.com/holbertonschool/Betty/wiki)
