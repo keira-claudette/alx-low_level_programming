@@ -13,40 +13,47 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-	unsigned int l, i, r, m;
-	int *ptr;
+	if (!array)
+		return (-1);
+	else
+		return (recursive_search(array, value, 0, size - 1));
+}
 
-	if (array && size > 0)
+/**
+ * recursive_search - does a binary search recursively
+ * @array: the array to search
+ * @value: the value to look for in the array
+ * @l: the lowest index of the array to search
+ * @r: the highest index of the array to search
+ * Return: int, the index of the value in the array if found.
+ */
+int recursive_search(int *array, int value, size_t l, size_t r)
+{
+	size_t m;
+
+	if (l > r)
 	{
-
-		l = 0;
-		i = l;
-		r = size - 1;
-		m = (l + r) / 2;
-		if (l > r)
-		{
-			return (-1);
-		}
-		print_search(&array[i], l, size);
-		if (value > array[m])
-		{
-			l = m + 1;
-			i = l;
-			ptr = &array[l];
-			return (binary_search(ptr, (r - l + 1), value));
-		}
-		else if (value < array[m])
-		{
-			r = m - 1;
-			ptr = &array[l];
-			return (binary_search(ptr, (r - l + 1), value));
-		}
-		else
-			return (m);
+		return (-1);
+	}
+	print_search(array, l, r + 1);
+	m = ((r - l) / 2) + l;
+	if (value == array[m])
+	{
+		return (m);
+	}
+	else if (value > array[m])
+	{
+		return (recursive_search(array, value, m + 1, r));
 	}
 	else
-		return (-1);
+		return (recursive_search(array, value, l, m - 1));
+
 }
+
+
+
+
+
 
 /**
  * print_search - prints the search process
