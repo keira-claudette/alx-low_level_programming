@@ -13,7 +13,7 @@
 ```
 gcc -Wall -Wextra -Werror -pedantic example-main.c example.c -o example
 ```
-Where `example-main.c` is the test file, `example.c` is your function declaration file and `example` if the name of the executable
+Where `example-main.c` is the test file, `example.c` is your function declaration file and `example` is the name of the executable.
 
 
 ## Tools:
@@ -50,4 +50,4 @@ done
 ```
 - Once saved, exit file and change permissions to apply to all users with chmod a+x betty
 - Move the betty file into /bin/ directory or somewhere else in your $PATH with sudo mv betty /bin/
-###### You can now type betty <filename> to run the Betty linter!
+###### You can now type `betty <filename>` to run the Betty linter!
